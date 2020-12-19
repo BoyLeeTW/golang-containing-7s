@@ -17,7 +17,7 @@ func Test_checkContainsTarget(t *testing.T) {
 		{
 			name: "should return false if input == 0",
 			args: args{
-				input:  1,
+				input:  0,
 				target: 7,
 			},
 			want: false,
@@ -99,26 +99,26 @@ func Test_containing7s(t *testing.T) {
 		},
 		{
 			name:    "should return 1 if input == 7",
-			number:  6,
-			want:    0,
+			number:  7,
+			want:    1,
 			wantErr: false,
 		},
 		{
 			name:    "should return 2 if input == 20",
-			number:  6,
-			want:    0,
+			number:  20,
+			want:    2,
 			wantErr: false,
 		},
 		{
 			name:    "should return 8 if input == 70",
-			number:  6,
-			want:    0,
+			number:  70,
+			want:    8,
 			wantErr: false,
 		},
 		{
 			name:    "should return 19 if input == 100",
-			number:  6,
-			want:    0,
+			number:  100,
+			want:    19,
 			wantErr: false,
 		},
 	}
